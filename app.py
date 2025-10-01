@@ -37,7 +37,7 @@ def calculate_lcm():
     try:
         result = lcm(x, y)
         if result > 10**15:
-            return str(float(result)), 200, {'Content-Type': 'text/plain'}
+            return f"{float(result):.15g}", 200, {'Content-Type': 'text/plain'}
         return str(result), 200, {'Content-Type': 'text/plain'}
     except Exception:
         return 'NaN', 200, {'Content-Type': 'text/plain'}
