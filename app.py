@@ -15,6 +15,9 @@ def lcm(x, y):
 
 def is_natural_number(value):
     try:
+        # Check for empty string
+        if value == '' or value is None:
+            return False, None
         num = float(value)
         if math.isinf(num) or math.isnan(num) or num < 0:
             return False, None
