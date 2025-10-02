@@ -1,0 +1,5 @@
+C:\Projects\Itransition_Tests\task3\publish\task3.exe
+C:\Projects\Itransition_Tests\task3\publish\task3.dll
+C:\Projects\Itransition_Tests\task3\publish\task3.deps.json
+C:\Projects\Itransition_Tests\task3\publish\task3.runtimeconfig.json
+C:\Projects\Itransition_Tests\task3\publish\task3.pdb
