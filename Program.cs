@@ -23,8 +23,6 @@ long Lcm(long x, long y)
         return 0;
     
     long gcd = Gcd(x, y);
-    // Calculate LCM = |x * y| / GCD
-    // To avoid overflow, divide first: LCM = |x / GCD * y|
     return Math.Abs(x / gcd * y);
 }
 
@@ -80,20 +78,18 @@ app.MapGet("/rahmanmusfiqur414_gmail_com", (HttpContext context) =>
 
     try
     {
-        // Check if inputs are large - use BigInteger for calculation
         if (x > 1_000_000_000_000L || y > 1_000_000_000_000L)
         {
             // Use double for very large numbers
             long gcd = Gcd(x, y);
-            double result = Math.Abs((double)x / gcd * y);
-            string floatResult = result.ToString("G15");
+            double largeResult = Math.Abs((double)x / gcd * y);
+            string floatResult = largeResult.ToString("G15");
             context.Response.ContentType = "text/plain";
             return Results.Text(floatResult);
         }
         
         long result = Lcm(x, y);
 
-        // For large results, return in floating-point notation
         if (result > 1_000_000_000_000_000L) // 10^15
         {
             string floatResult = ((double)result).ToString("G15");
