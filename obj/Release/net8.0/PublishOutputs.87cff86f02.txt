@@ -1,4 +1,8 @@
 C:\Projects\Itransition_Tests\task3\publish\task3.exe
+C:\Projects\Itransition_Tests\task3\publish\publish\web.config
+C:\Projects\Itransition_Tests\task3\publish\publish\task3.deps.json
+C:\Projects\Itransition_Tests\task3\publish\publish\task3.runtimeconfig.json
+C:\Projects\Itransition_Tests\task3\publish\publish\task3.staticwebassets.endpoints.json
 C:\Projects\Itransition_Tests\task3\publish\task3.dll
 C:\Projects\Itransition_Tests\task3\publish\task3.deps.json
 C:\Projects\Itransition_Tests\task3\publish\task3.runtimeconfig.json
